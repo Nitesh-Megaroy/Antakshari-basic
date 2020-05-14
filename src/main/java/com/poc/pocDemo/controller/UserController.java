@@ -43,7 +43,7 @@ public class UserController {
 	
 	// For getting the list of registered users---->
 	@GetMapping("/users")
-	public List<RegisterUser> retrieveAllStudents() {
+	public List<RegisterUser> retrieveAllUsers() {
 		return (List<RegisterUser>) userRepo.findAll();
 	}
 }
